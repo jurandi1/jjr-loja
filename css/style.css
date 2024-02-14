@@ -24,7 +24,9 @@ body {
 }
 
 .cabecalho {
-    padding: 5% 0% 0% 15%;
+    padding: 2rem 0 0 15%;
+    display: flex;
+    align-items: center;
 }
 
 .cabecalho__menu {
@@ -40,11 +42,15 @@ body {
     text-decoration: none;
 }
 
+.h2 {
+    padding-right: 10px;
+}
+
 .logo {
     top: 10px;
     left: 100px;
     width: 100px;
-    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .card {

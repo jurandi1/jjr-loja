@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="jjr_loja.aspx.cs" Inherits="jjr_loja" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="prod_masc.aspx.cs" Inherits="jjr_loja" %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,16 +32,28 @@
         <hr>
     </div>
 
-
-
     <div class="container">
         <div id="produtos" class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <h1 class="apresentacao__conteudo__titulo">Olá! Meu nome é Jurandi Junior, <strong class="titulo-destaque">Desenvolvedor deste site que simula uma loja de roupas, fique a vontade!</strong></h1>
-                <p class="apresentacao__conteudo__paragrafo">
-                    Estou sempre buscando novas oportunidades para aplicar e expandir meu conhecimento técnico, 
-                com o objetivo de fazer uma diferença significativa no campo da tecnologia. Navegue pelo site desenvolvido por mim e descubra um pouco mais das minhas habilidades.
-                </p>
+                <div class="card">
+                    <img src="img/produtos/camisetas_man.jpg" class="card-img-top" alt="Camisetas Masculinas">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisetas Masculinas</h5>
+                        <p class="card-text">Kit de 5 Camisetas</p>
+                        <p class="card-text">R$ 100,00 Preço</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/produtos/cuecas.jpg" class="card-img-top" alt="Cuecas">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuecas</h5>
+                        <p class="card-text">Kit de 9 Cuecas</p>
+                        <p class="card-text">R$ 85,00 Preço</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
