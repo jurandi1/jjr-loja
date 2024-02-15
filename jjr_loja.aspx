@@ -22,9 +22,15 @@
 
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="jjr_loja.aspx">Principal</a>
-            <a class="cabecalho__menu__link" href="prod_masc.aspx">Masculino</a>
-            <a class="cabecalho__menu__link" href="prod_fem.aspx">Feminino</a>
+            <a class="cabecalho__menu__link" href="prod_masc.aspx">Homem</a>
+            <a class="cabecalho__menu__link" href="prod_fem.aspx">Mulher</a>
             <a class="cabecalho__menu__link" href="unisex.aspx">Unisex</a>
+            <form class="cabecalho__menu__search" runat="server">
+                <asp:LinkButton ID="btnPesquisar" runat="server" OnClick="btnPesquisar_Click">
+                        <img src="img/site/search.jpg" style="width: 35px; height: 35px;">
+                </asp:LinkButton>
+            </form>
+
         </nav>
     </header>
 

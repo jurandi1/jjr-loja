@@ -34,13 +34,26 @@ body {
     gap: 60px;
 }
 
-.cabecalho__menu__link {
+.cabecalho__menu__link, .cabecalho__menu__search button {
     font-family: var(--font-secundaria);
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+
+.cabecalho__menu__search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cabecalho__menu__search button img {
+    width: 40px;
+    height: 40px;
+}
+
+
 
 .h2 {
     padding-right: 10px;
@@ -59,8 +72,8 @@ body {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 80%; 
-    margin: 10px auto; 
+    width: 40%;
+    margin: 10px auto;
 }
 
 .card-img-top {
@@ -113,10 +126,10 @@ body {
     font-family: var(--font-secundaria);
 }
 
-.apresentacao__links__navegacao:hover {
-    background-color: var(--cor-hover);
-    text-decoration: underline;
-}
+    .apresentacao__links__navegacao:hover {
+        background-color: var(--cor-hover);
+        text-decoration: underline;
+    }
 
 .social-icon {
     width: 22px;

@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="unisex.aspx.cs" Inherits="jjr_loja" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="unisex.aspx.cs" Inherits="unisex" %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja JJr</title>
+    <title>Loja JJr - Unisex</title>
     <link rel="icon" href="img/site/logo.jpg" type="image/jpg">
 
     <%--ESTILO DA PÁGINA--%>
@@ -22,8 +22,8 @@
 
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="jjr_loja.aspx">Principal</a>
-            <a class="cabecalho__menu__link" href="prod_masc.aspx">Masculino</a>
-            <a class="cabecalho__menu__link" href="prod_fem.aspx">Feminino</a>
+            <a class="cabecalho__menu__link" href="prod_masc.aspx">Homem</a>
+            <a class="cabecalho__menu__link" href="prod_fem.aspx">Mulher</a>
             <a class="cabecalho__menu__link" href="unisex.aspx">Unisex</a>
         </nav>
     </header>
@@ -34,7 +34,7 @@
 
     <div class="container">
         <div id="produtos" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="card">
                     <img src="img/produtos/meias.jpg" class="card-img-top" alt="Meias">
                     <div class="card-body">
