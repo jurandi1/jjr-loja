@@ -26,6 +26,7 @@
             <a class="cabecalho__menu__link" href="prod_fem.aspx">Mulher</a>
             <a class="cabecalho__menu__link" href="unisex.aspx">Unisex</a>
             <form class="cabecalho__menu__search" runat="server">
+                <asp:TextBox ID="searchBox" runat="server" placeHolder="'Homem', 'Mulher', 'Unisex'"/>
                 <asp:LinkButton ID="btnPesquisar" runat="server" OnClick="btnPesquisar_Click">
                         <img src="img/site/search.jpg" style="width: 35px; height: 35px;">
                 </asp:LinkButton>
