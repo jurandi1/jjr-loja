@@ -41,7 +41,7 @@
                         <h5 class="card-title">Meias</h5>
                         <p class="card-text">Kit de 3 Meias</p>
                         <p class="card-text">R$ 35,00 Preço</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        <a href="Encomendar.aspx" class="btn btn-primary">Encomendar</a>
                     </div>
                 </div>
 

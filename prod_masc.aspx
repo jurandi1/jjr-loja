@@ -41,7 +41,7 @@
                             <h5 class="card-title">Camisetas Masculinas</h5>
                             <p class="card-text">Kit de 5 Camisetas</p>
                             <p class="card-text">R$ 100,00 Preço</p>
-                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="Encomendar.aspx" class="btn btn-primary">Encomendar</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                             <h5 class="card-title">Cuecas</h5>
                             <p class="card-text">Kit de 9 Cuecas</p>
                             <p class="card-text">R$ 85,00 Preço</p>
-                            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                            <a href="Encomendar.aspx" class="btn btn-primary">Encomendar</a>
                         </div>
                     </div>
                 </div>

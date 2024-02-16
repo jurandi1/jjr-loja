@@ -41,7 +41,7 @@
                         <h5 class="card-title">Camisetas Femininas</h5>
                         <p class="card-text">Kit de 3 Camisetas</p>
                         <p class="card-text">R$ 60,00 Preço</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        <a href="Encomendar.aspx" class="btn btn-primary">Encomendar</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                         <h5 class="card-title">Calcinhas</h5>
                         <p class="card-text">Kit de 6 Calcinhas</p>
                         <p class="card-text">R$ 70,00 Preço</p>
-                        <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        <a href="Encomendar.aspx" class="btn btn-primary">Encomendar</a>
                     </div>
                 </div>
             </div>
