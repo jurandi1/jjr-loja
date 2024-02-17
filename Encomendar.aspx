@@ -39,15 +39,21 @@
 
                     <div class="form-group">
                         <label for="produto">Produto:</label>
-                        <asp:CheckBoxList ID="produto" runat="server" CssClass="form-control">
+                        <asp:CheckBoxList ID="produto" runat="server" CssClass="form-control" AutoPostBack="true" OnSelectedIndexChanged="produto_SelectedIndexChanged">
                             <asp:ListItem Value="camisetas_man">&nbsp;Camisetas Masculinas - R$ 100,00</asp:ListItem>
                             <asp:ListItem Value="cuecas">&nbsp;Cuecas - R$ 85,00</asp:ListItem>
                             <asp:ListItem Value="camisetas_fem">&nbsp;Camisetas Femininas - R$ 60,00</asp:ListItem>
                             <asp:ListItem Value="calcinhas">&nbsp;Calcinhas - R$ 70,00</asp:ListItem>
                             <asp:ListItem Value="meias">&nbsp;Meias - R$ 35,00</asp:ListItem>
+                            <asp:ListItem Value="outros">&nbsp;Outros</asp:ListItem>
                         </asp:CheckBoxList>
+                        <asp:CustomValidator ID="cvProduto" runat="server" ErrorMessage="*Produto é obrigatório." OnServerValidate="cvProduto_ServerValidate" Style="color: red" />
                     </div>
-
+                    <div class="form-group" ID="divProd" runat="server" visible="false">
+                        <label for="txtProd">Outro produto:</label>
+                        <asp:TextBox ID="txtProd" runat="server" CssClass="form-control" />
+                        <small><b>*Iremos verificar disponibilidade e valores e encaminhar os detalhes pelos contatos informados.</b></small>
+                    </div>
                     <div class="form-group">
                         <label for="nome">Nome:</label>
                         <asp:TextBox ID="nome" runat="server" CssClass="form-control" />
@@ -79,7 +85,7 @@
                     <div class="form-group" id="lojaDiv" runat="server" visible="false">
                         <label for="loja">Loja:</label>
                         <asp:DropDownList ID="loja" runat="server" CssClass="form-control">
-                             <asp:ListItem Value="" Selected="True">[Selecione]</asp:ListItem>
+                            <asp:ListItem Value="" Selected="True">[Selecione]</asp:ListItem>
                             <asp:ListItem Value="barrafunda">Unidade Barra Funda</asp:ListItem>
                             <asp:ListItem Value="se">Unidade Sé</asp:ListItem>
                             <asp:ListItem Value="itaquera">Unidade Itaquera</asp:ListItem>

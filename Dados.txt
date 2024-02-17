@@ -8,3 +8,41 @@ Endereço: Rua teste, 25
 Retirada ou Entrega:retirada
 Loja: barrafunda
 Valor: 
+
+Produtos:  Camisetas Femininas - R$ 60,00,  Calcinhas - R$ 70,00
+Nome: Teste 3
+Telefone: 11944556677
+E-mail: teste@gmail.com
+Endereço: Rua Teste, 17
+Retirada ou Entrega:retirada
+Loja: se
+Valor: 
+
+Produtos:  Camisetas Femininas - R$ 60,00,  Calcinhas - R$ 70,00
+Nome: Teste 3
+Telefone: 11944556677
+E-mail: teste@gmail.com
+Endereço: Rua Teste, 17
+Retirada ou Entrega:retirada
+Loja: se
+Valor: 
+
+Produtos:  Outros
+Outros: Mochila
+Nome: Teste 4
+Telefone: 11977778888
+E-mail: teste@gmail.com
+Endereço: Rua teste 4
+Retirada ou Entrega:retirada
+Loja: itaquera
+Valor: 100,00
+
+Produtos:  Outros
+Outros: Mochila
+Nome: Junior
+Telefone: 11957203901
+E-mail: teste@gmail.com 
+Endereço: rua teste 23
+Retirada ou Entrega:retirada
+Loja: itaquera
+Valor: 100,00

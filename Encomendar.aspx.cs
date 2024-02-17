@@ -57,7 +57,7 @@ public partial class Encomendar : System.Web.UI.Page
             produtosSelecionados = produtosSelecionados.Substring(0, produtosSelecionados.Length - 2);
         }
 
-        string dados = "\n\nProdutos: " + produtosSelecionados + "\nNome: " + nome.Text + "\nTelefone: " + telefone.Text + "\nE-mail: " + email.Text + "\nEndereço: " + endereco.Text + "\nRetirada ou Entrega:" + retiradaEntrega.SelectedValue + "\nLoja: " + loja.SelectedValue + "\nValor: " + valor.Text;
+        string dados = "\n\nProdutos: " + produtosSelecionados + "\nOutros: " + txtProd.Text + "\nNome: " + nome.Text + "\nTelefone: " + telefone.Text + "\nE-mail: " + email.Text + "\nEndereço: " + endereco.Text + "\nRetirada ou Entrega:" + retiradaEntrega.SelectedValue + "\nLoja: " + loja.Text + "\nValor: " + valor.Text;
 
         // Especificar o caminho do arquivo
         string caminhoDoArquivo = Server.MapPath("~/Dados.txt");
@@ -75,9 +75,32 @@ public partial class Encomendar : System.Web.UI.Page
         pagamento.SelectedValue = "pix";
         valor.Text = "";
         produto.ClearSelection(); // Limpar a seleção do produto
-
+        txtProd.Text = "";
         // Exibir uma mensagem de sucesso
-        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Pedido efetuado com sucesso. Um e-mail foi direcionado à loja e em breve entraremos em contato via e-mail e WhatsApp.');", true);
+        //ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Pedido efetuado com sucesso. Entraremos em contato via e-mail e WhatsApp.');", true);
+        Response.Redirect("Agradecimento.aspx");
+
+    }
+
+    protected void cvProduto_ServerValidate(object source, ServerValidateEventArgs args)
+    {
+        // Verificar se pelo menos um produto está selecionado
+        args.IsValid = produto.SelectedItem != null;
+    }
+
+    protected void produto_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        // Verificar se a opção "Outro" está selecionada
+        if (produto.Items.FindByValue("outros").Selected)
+        {
+            // Se "Outro" estiver selecionado, mostrar o TextBox
+            divProd.Visible = true;
+        }
+        else
+        {
+            // Se "Outro" não estiver selecionado, ocultar o TextBox
+            divProd.Visible = false;
+        }
     }
 
 }
