@@ -51,22 +51,22 @@
                     <div class="form-group">
                         <label for="nome">Nome:</label>
                         <asp:TextBox ID="nome" runat="server" CssClass="form-control" />
-                        <asp:RequiredFieldValidator ControlToValidate="nome" ErrorMessage="*Nome é obrigatório." runat="server" style="color:red"/>
+                        <asp:RequiredFieldValidator ControlToValidate="nome" ErrorMessage="*Nome é obrigatório." runat="server" Style="color: red" />
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
                         <asp:TextBox ID="telefone" runat="server" CssClass="form-control" />
-                        <asp:RequiredFieldValidator ControlToValidate="telefone" ErrorMessage="*Telefone é obrigatório." runat="server" style="color:red" />
+                        <asp:RequiredFieldValidator ControlToValidate="telefone" ErrorMessage="*Telefone é obrigatório." runat="server" Style="color: red" />
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail:</label>
                         <asp:TextBox ID="email" runat="server" CssClass="form-control" />
-                        <asp:RequiredFieldValidator ControlToValidate="email" ErrorMessage="*E-mail é obrigatório." runat="server" style="color:red"/>
+                        <asp:RequiredFieldValidator ControlToValidate="email" ErrorMessage="*E-mail é obrigatório." runat="server" Style="color: red" />
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço:</label>
                         <asp:TextBox ID="endereco" runat="server" CssClass="form-control" />
-                        <asp:RequiredFieldValidator ControlToValidate="endereco" ErrorMessage="*Endereço é obrigatório." runat="server" style="color:red"/>
+                        <asp:RequiredFieldValidator ControlToValidate="endereco" ErrorMessage="*Endereço é obrigatório." runat="server" Style="color: red" />
                     </div>
                     <div class="form-group">
                         <label for="retiradaEntrega">Retirar na loja ou entrega:</label>
@@ -79,6 +79,7 @@
                     <div class="form-group" id="lojaDiv" runat="server" visible="false">
                         <label for="loja">Loja:</label>
                         <asp:DropDownList ID="loja" runat="server" CssClass="form-control">
+                             <asp:ListItem Value="" Selected="True">[Selecione]</asp:ListItem>
                             <asp:ListItem Value="barrafunda">Unidade Barra Funda</asp:ListItem>
                             <asp:ListItem Value="se">Unidade Sé</asp:ListItem>
                             <asp:ListItem Value="itaquera">Unidade Itaquera</asp:ListItem>
@@ -108,5 +109,7 @@
     <footer class="rodape">
         <p>Desenvolvido por Jurandi Junior.</p>
     </footer>
+
+
 </body>
 </html>

@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Net.Mail;
+using System.Net;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 public partial class Encomendar : System.Web.UI.Page
 {
@@ -38,8 +41,29 @@ public partial class Encomendar : System.Web.UI.Page
 
     protected void finalizar_Click(object sender, EventArgs e)
     {
-        // Aqui você pode adicionar a lógica para processar o pedido
-        // ...
+        // Criar uma string com as informações do formulário
+        string produtosSelecionados = "";
+        foreach (ListItem item in produto.Items)
+        {
+            if (item.Selected)
+            {
+                produtosSelecionados += item.Text + ", ";
+            }
+        }
+
+        // Remover a última vírgula e espaço
+        if (produtosSelecionados.Length > 0)
+        {
+            produtosSelecionados = produtosSelecionados.Substring(0, produtosSelecionados.Length - 2);
+        }
+
+        string dados = "\n\nProdutos: " + produtosSelecionados + "\nNome: " + nome.Text + "\nTelefone: " + telefone.Text + "\nE-mail: " + email.Text + "\nEndereço: " + endereco.Text + "\nRetirada ou Entrega:" + retiradaEntrega.SelectedValue + "\nLoja: " + loja.SelectedValue + "\nValor: " + valor.Text;
+
+        // Especificar o caminho do arquivo
+        string caminhoDoArquivo = Server.MapPath("~/Dados.txt");
+
+        // Escrever os dados no arquivo
+        System.IO.File.AppendAllText(caminhoDoArquivo, dados);
 
         // Limpar os campos do formulário
         nome.Text = "";
@@ -47,10 +71,10 @@ public partial class Encomendar : System.Web.UI.Page
         email.Text = "";
         endereco.Text = "";
         retiradaEntrega.SelectedValue = "";
-        loja.SelectedValue = "barrafunda";
+        loja.SelectedValue = "";
         pagamento.SelectedValue = "pix";
         valor.Text = "";
-        produto.SelectedValue = "camisetas_man";
+        produto.ClearSelection(); // Limpar a seleção do produto
 
         // Exibir uma mensagem de sucesso
         ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Pedido efetuado com sucesso. Um e-mail foi direcionado à loja e em breve entraremos em contato via e-mail e WhatsApp.');", true);

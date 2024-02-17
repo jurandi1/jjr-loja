@@ -1,0 +1,10 @@
+
+
+Produtos:  Camisetas Masculinas - R$ 100,00,  Cuecas - R$ 85,00,  Meias - R$ 35,00
+Nome: teste
+Telefone: 1194445555
+E-mail: teste@gmail.com
+Endereço: Rua teste, 25
+Retirada ou Entrega:retirada
+Loja: barrafunda
+Valor: 
