@@ -25,6 +25,7 @@
             <a class="cabecalho__menu__link" href="prod_masc.aspx">Homem</a>
             <a class="cabecalho__menu__link" href="prod_fem.aspx">Mulher</a>
             <a class="cabecalho__menu__link" href="unisex.aspx">Unisex</a>
+            <a class="cabecalho__menu__link" href="relatorio.aspx">Pedidos</a>
         </nav>
     </header>
 

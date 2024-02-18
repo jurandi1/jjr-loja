@@ -57,7 +57,9 @@ public partial class Encomendar : System.Web.UI.Page
             produtosSelecionados = produtosSelecionados.Substring(0, produtosSelecionados.Length - 2);
         }
 
-        string dados = "\n\nProdutos: " + produtosSelecionados + "\nOutros: " + txtProd.Text + "\nNome: " + nome.Text + "\nTelefone: " + telefone.Text + "\nE-mail: " + email.Text + "\nEndereço: " + endereco.Text + "\nRetirada ou Entrega:" + retiradaEntrega.SelectedValue + "\nLoja: " + loja.Text + "\nValor: " + valor.Text;
+        string dataHoraAtual = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+        string dados = "\n\nData e Hora: " + dataHoraAtual + "\nProdutos: " + produtosSelecionados + "\nOutros: " + txtProd.Text + "\nNome: " + nome.Text + "\nTelefone: " + telefone.Text + "\nE-mail: " + email.Text + "\nEndereço: " + endereco.Text + "\nRetirada ou Entrega:" + retiradaEntrega.SelectedValue + "\nLoja: " + loja.Text + "\nForma de pagamento: " + pagamento.Text + "\nValor: " + valor.Text;
 
         // Especificar o caminho do arquivo
         string caminhoDoArquivo = Server.MapPath("~/Dados.txt");

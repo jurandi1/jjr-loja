@@ -16,21 +16,21 @@
 </head>
 <body>
     <form runat="server" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100vh;">
-        <div class="cabecalho">
-            <img src="img/site/logo.jpg" alt="Logo" class="logo">
-        </div>
-        <div class="cabecalho">
-            <h2 class="h2">Obrigado por comprar na Loja JJr</h2>
+        <div class="container" style="width: 100%; text-align: center;">
+            <div class="cabecalho" style="width: 100%; text-align: center; margin: 0 auto;">
+                <img src="img/site/logo.jpg" alt="Logo" class="logo"><h2 class="h2">Obrigado por escolher a Loja JJr</h2>
+            </div>
         </div>
         <div style="width: 90%; margin: 0 auto;">
             <hr>
         </div>
 
         <div class="container" style="width: 100%; text-align: center;">
-            <h5>Obrigado pela sua compra!</h5>
+            <h5>Sua encomenda foi enviada a loja!</h5>
             <p>Seu pedido foi efetuado com sucesso. Entraremos em contato via e-mail e WhatsApp.</p>
-            <asp:LinkButton ID="btnNovaCompra" runat="server" class="btn btn-primary" OnClick="btnNovaCompra_Click" Style="width: 100%;">Fazer Nova Compra</asp:LinkButton>
-            <asp:LinkButton ID="btnPagPrincipal" runat="server" class="btn btn-secondary" OnClick="btnPagPrincipal_Click" Style="width: 100%;">Voltar para a Página Principal</asp:LinkButton>
+            <asp:LinkButton ID="btnNovaCompra" runat="server" class="btn btn-primary" OnClick="btnNovaCompra_Click" Style="width: 50%;">Fazer Nova Compra</asp:LinkButton>
+            <div>&nbsp;</div>
+            <asp:LinkButton ID="btnPagPrincipal" runat="server" class="btn btn-secondary" OnClick="btnPagPrincipal_Click" Style="width: 60%;">Voltar para a Página Principal</asp:LinkButton>
         </div>
     </form>
 </body>

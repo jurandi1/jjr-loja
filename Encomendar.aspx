@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja JJr - Unisex</title>
+    <title>Loja JJr - Encomendar</title>
     <link rel="icon" href="img/site/logo.jpg" type="image/jpg">
 
     <%--ESTILO DA PÁGINA--%>
@@ -19,12 +19,12 @@
         <img src="img/site/logo.jpg" alt="Logo" class="logo"><h2 class="h2">Bem-vindo à Loja JJr</h2>
     </div>
     <header class="cabecalho">
-
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="jjr_loja.aspx">Principal</a>
             <a class="cabecalho__menu__link" href="prod_masc.aspx">Homem</a>
             <a class="cabecalho__menu__link" href="prod_fem.aspx">Mulher</a>
             <a class="cabecalho__menu__link" href="unisex.aspx">Unisex</a>
+            <a class="cabecalho__menu__link" href="relatorio.aspx">Pedidos</a>
         </nav>
     </header>
 
