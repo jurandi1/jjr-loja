@@ -11,6 +11,11 @@ public partial class relatorio : System.Web.UI.Page
         {
             GerarRelatorio();
         }
+
+        if (Session["DadosPedido"] != null)
+        {
+            string dadosPedido = Session["DadosPedido"].ToString();
+        }
     }
 
     private void GerarRelatorio()
